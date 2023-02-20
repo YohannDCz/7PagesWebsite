@@ -148,6 +148,13 @@ section.design {
   margin-top: 160px;
 }
 
+section.design .web-design:hover,
+section.design .app-design:hover,
+section.design .graphic-design:hover {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+
 section.design a {
   text-decoration: none;
   color: white;
