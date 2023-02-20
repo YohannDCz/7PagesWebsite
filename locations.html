@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="./assets/favicon-32x32.png">
+
+        <title>Frontend Mentor | Designo Agency Website Challenge</title>
+
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/web-design.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+
+        <style>
+
+            section {
+                width: 77.22%;
+                display: flex;
+                column-gap: 30px;
+                height: 326px;
+            }
+
+            section.canada {
+                margin-top: 64px;
+            }
+
+            section.australia,
+            section.united-kingdom {
+                margin-top: 32px;
+            }
+
+            section .container,
+            section .map {
+                border: none;
+                border-radius: 15px;
+                overflow: hidden;
+            }
+            section .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                flex: 1;
+                height: 100%;
+                background-color: rgba(253, 243, 240, 1);
+            }
+
+            section .map {
+                width: 350px;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            section .map img {
+                height: 100%;
+                width: 100%;
+            }
+
+            section .container .circles {
+                transform: rotate(180deg);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            section .container .text {
+                display: flex;
+                flex-direction: column;
+                width: 73.97%;
+            }
+
+            section .container .text .country {
+                font-size: 40px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: rgba(231, 129, 107, 1);
+            }
+
+            section .container .text .box {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 24px;
+            }
+
+            section .container .text .box .left-info,
+            section .container .text .box .rigth-info {
+                display: flex;
+                flex-direction: column;
+            }
+
+            section .container .text .box .rigth-info {
+                padding-right: 24px;
+            }
+
+            section .container .text .box .title {
+                font-weight: 700;
+            }
+
+            section .container .text .box p {
+                font-size: 16px;
+                line-height: 1.625;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="left-info">
+                <a href="./index.html"><img
+                        src="./assets/shared/desktop/logo-dark.png"
+                        alt="The logo of the company."></a>
+            </div>
+            <div class="right-info">
+                <a href="./about.html"><p>Our Company</p></a>
+                <a href="./locations.html"><p>Locations</p></a>
+                <a href="./contact.html"><p>Contact</p></a>
+            </div>
+        </header>
+        <section class="canada">
+            <div class="container">
+                <img src="./assets/shared/desktop/bg-pattern-two-circles.svg"
+                    alt="The sticker of 2 circles." class="circles">
+                <div class="text">
+                    <h1 class="country">Canada</h1>
+                    <div class="box">
+                        <div class="left-info">
+                            <p class="title">Designo Central Office</p>
+                            <p>3886 Wellington Street</p>
+                            <p>Toronto, Ontario M9C 3J5</p>
+                        </div>
+                        <div class="right-info">
+                            <p class="title">Contact</p>
+                            <p>P : +1 253-863-8967</p>
+                            <p>M : contact@designo.co</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <img src="./assets/locations/desktop/image-map-canada.png"
+                    alt="" class="image-map">
+            </div>
+        </section>
+        <section class="australia">
+            <div class="map">
+                <img src="./assets/locations/desktop/image-map-australia.png"
+                    alt="" class="image-map">
+            </div>
+            <div class="container">
+                <img src="./assets/shared/desktop/bg-pattern-two-circles.svg"
+                    alt="The sticker of 2 circles." class="circles">
+
+                <div class="text">
+                    <h1 class="country">Australia</h1>
+                    <div class="box">
+                        <div class="left-info">
+                            <p class="title">Designo AU Office</p>
+                            <p>3886 Wellington Street</p>
+                            <p>19 Balonne Street</p>
+                            <p>New South Wales 2443</p>
+                        </div>
+                        <div class="right-info">
+                            <p class="title">Contact</p>
+                            <p>P : (02) 6720 9092</p>
+                            <p>M : contact@designo.au</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="united-kingdom">
+            <div class="container">
+                <img src="./assets/shared/desktop/bg-pattern-two-circles.svg"
+                    alt="THe sticker of 2 circles." class="circles">
+
+                <div class="text">
+                    <h1 class="country">United Kingdom</h1>
+                    <div class="box">
+                        <div class="left-info">
+                            <p class="title">Designo UK Office</p>
+                            <p>13 Colorado Way</p>
+                            <p>Rhyd-y-fro SA8 9GA</p>
+                        </div>
+                        <div class="right-info">
+                            <p class="title">Contact</p>
+                            <p>P : 078 3115 1400</p>
+                            <p>M : contact@designo.uk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <img
+                    src="./assets/locations/desktop/image-map-united-kingdom.png"
+                    alt="" class="image-map">
+            </div>
+        </section>
+        <section class="call-to-action">
+            <div class="description">
+                <h1>Let's talk about your project</h1>
+                <p>Ready to take it to the next level? Contact us today and find
+                    out how
+                    our expertise can help your business grow.</p>
+            </div>
+            <button>Get in touch</button>
+            <img
+                src="./assets/shared/desktop/bg-pattern-call-to-action.svg"
+                alt="A round sticker." class="sticker">
+        </section>
+        <footer>
+            <div class="info">
+                <div class="header">
+                    <div class="left-info">
+                        <a href="./index.html"><img
+                                src="./assets/shared/desktop/logo-dark.png"
+                                alt="The logo of the company."></a>
+                    </div>
+                    <div class="right-info">
+                        <a href="./about.html"><p>Our Company</p></a>
+                        <a href="./locations.html"><p>Locations</p></a>
+                        <a href="./contact.html"><p>Contact</p></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="bottom-info">
+                    <div class="central-office">
+                        <p class="title">Designo Central Office</p>
+                        <p>3886 Wellington Street</p>
+                        <p>Toronto, Ontario M9C 3J5</p>
+                    </div>
+                    <div class="contact">
+                        <p>Contact Us (Central Office)</p>
+                        <p>P : +1 253-863-8967</p>
+                        <p>M : contact@designo.co</p>
+                    </div>
+                    <div class="social">
+                        <img
+                            src="./assets/shared/desktop/icon-facebook.svg"
+                            alt="The Facebook logo.">
+                        <img
+                            src="./assets/shared/desktop/icon-youtube.svg"
+                            alt="The YouTube logo.">
+                        <img
+                            src="./assets/shared/desktop/icon-twitter.svg"
+                            alt="The Twitter logo.">
+                        <img
+                            src="./assets/shared/desktop/icon-pinterest.svg"
+                            alt="The Pinterest logo.">
+                        <img
+                            src="./assets/shared/desktop/icon-instagram.svg"
+                            alt="The Instagram logo.">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
