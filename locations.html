@@ -6,11 +6,13 @@
         <link rel="icon" type="image/png" sizes="32x32"
             href="./assets/favicon-32x32.png">
 
-        <title>Frontend Mentor | Designo Agency Website Challenge</title>
+        <title>Designo Agency Website Challenge</title>
 
         <link rel="stylesheet" href="./styles/index.css">
-        <link rel="stylesheet" href="./styles/web-design.css">
-        <link rel="stylesheet" href="./styles/media-queries.css">
+        <link rel="stylesheet" href="./styles/index_media-queries.css">
+        <link rel="stylesheet" href="./styles/x-design.css">
+        <link rel="stylesheet" href="./styles/x-design_media-queries.css">
+        <link rel="stylesheet" href="./styles/location.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,99 +20,6 @@
             href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
 
-        <style>
-
-            section {
-                width: 77.22%;
-                display: flex;
-                column-gap: 30px;
-                height: 326px;
-            }
-
-            section.canada {
-                margin-top: 64px;
-            }
-
-            section.australia,
-            section.united-kingdom {
-                margin-top: 32px;
-            }
-
-            section .container,
-            section .map {
-                border: none;
-                border-radius: 15px;
-                overflow: hidden;
-            }
-            section .container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                flex: 1;
-                height: 100%;
-                background-color: rgba(253, 243, 240, 1);
-            }
-
-            section .map {
-                width: 350px;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-            }
-
-            section .map img {
-                height: 100%;
-                width: 100%;
-            }
-
-            section .container .circles {
-                transform: rotate(180deg);
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                z-index: -1;
-            }
-
-            section .container .text {
-                display: flex;
-                flex-direction: column;
-                width: 73.97%;
-            }
-
-            section .container .text .country {
-                font-size: 40px;
-                font-weight: 500;
-                line-height: 1.2;
-                color: rgba(231, 129, 107, 1);
-            }
-
-            section .container .text .box {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                margin-top: 24px;
-            }
-
-            section .container .text .box .left-info,
-            section .container .text .box .rigth-info {
-                display: flex;
-                flex-direction: column;
-            }
-
-            section .container .text .box .rigth-info {
-                padding-right: 24px;
-            }
-
-            section .container .text .box .title {
-                font-weight: 700;
-            }
-
-            section .container .text .box p {
-                font-size: 16px;
-                line-height: 1.625;
-            }
-        </style>
     </head>
     <body>
         <header>
@@ -220,9 +129,11 @@
             <div class="info">
                 <div class="header">
                     <div class="left-info">
-                        <a href="./index.html"><img
-                                src="./assets/shared/desktop/logo-dark.png"
-                                alt="The logo of the company."></a>
+                        <a href="./index.html">
+                            <img
+                                src="./assets/shared/desktop/logo-light.png"
+                                alt="The light designo icon." class="designo">
+                        </a>
                     </div>
                     <div class="right-info">
                         <a href="./about.html"><p>Our Company</p></a>

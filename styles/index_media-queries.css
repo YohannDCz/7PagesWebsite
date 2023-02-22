@@ -1,0 +1,130 @@
+@media only screen and (max-width: 850px) {
+
+  section.award,
+  section.call-to-action {
+    display: flex;
+    flex-direction: column;
+    width: 89.71%;
+    align-items: center;
+    height: 100%;
+  }
+
+  section.award .description,
+  section.call-to-action .description {
+    align-items: center;
+    left: unset;
+    width: 100%;
+    max-width: 573px;
+    padding: 0 58px;
+  }
+
+  section.award .description h1,
+  section.award .description p,
+  section.award .description button,
+  section.call-to-action .description h1,
+  section.call-to-action .description p,
+  section.call-to-action .description button {
+    text-align: center;
+  }
+
+  section.award {
+    min-height: 843px;
+  }
+
+  section.award .description h1 {
+    height: 100%;
+    min-height: 165px;
+    display: flex;
+  }
+
+  section.award .description p,
+  section.call-to-action .description p {
+    width: 100%;
+    max-width: 445px;
+    margin-top: 8px;
+  }
+
+  section.award .description button,
+  section.call-to-action .description button {
+    margin-top: 19px;
+  }
+
+  section.award .phone {
+    left: unset;
+    justify-self: center;
+    top: 46.68%;
+  }
+
+  section.design {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    width: 89.71%;
+  }
+
+  section.design a div {
+    height: 200px;
+    width: 100%;
+  }
+
+  section.design a div>img {
+    width: 100%;
+  }
+
+  section.features {
+    margin-top: 120px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+  }
+
+  section.features .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 89.71%;
+    margin: 0;
+  }
+
+  section.features .container:nth-child(2),
+  section.features .container:nth-child(3) {
+    margin: 0;
+    margin-top: 32px;
+  }
+
+  section.features .container .description {
+    margin: 0 0 0 48px;
+    align-items: flex-start;
+    width: 65.67%;
+  }
+
+
+
+  section.features .container .description p {
+    margin-top: 16px;
+    text-align: left;
+  }
+
+  section.call-to-action {
+    margin-top: 68px;
+    min-height: 350px;
+  }
+
+  section.call-to-action .description {
+    top: 58px;
+  } 
+
+  section.call-to-action button {
+    top: unset;
+    bottom: 57px;
+    right: unset;
+    left: unset;
+  }
+
+  .rectangle,
+  .rectangle2 {
+    display: none;
+  }
+
+}

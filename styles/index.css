@@ -66,6 +66,7 @@ header .right-info a p {
   margin-left: 42px;
   letter-spacing: 2px;
   text-align: center;
+  white-space: nowrap;
 }
 
 header .right-info a p:hover {
@@ -403,6 +404,7 @@ footer .info .header .right-info p {
   color: white;
   margin-left: 42px;
   text-align: center;
+  white-space: nowrap;
 }
 
 footer .info hr {

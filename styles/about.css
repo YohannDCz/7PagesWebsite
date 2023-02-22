@@ -1,0 +1,88 @@
+.rectangle {
+  top: 475px !important;
+}
+
+section {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 77.22%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+section.about-us {
+  background-color: rgba(231, 129, 107, 1);
+  height: 480px;
+  margin-top: 64px;
+}
+
+section.world-class-talent,
+section.the-real-deal {
+  background-color: rgba(253, 243, 240, 1);
+  height: 640px;
+  margin-top: 160px;
+}
+
+
+section .description1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1; */
+  width: 100%;
+  max-width: 635px;
+  height: 100%;
+  z-index: 0;
+}
+
+section .description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 250px;
+  max-width: 458px;
+  margin: 0 96px;
+
+}
+
+section.about-us .oval {
+  position: absolute;
+  bottom: 0;
+}
+
+section .image {
+  display: flex;
+  justify-content: center;
+  justify-self: flex-end;
+  width: 100%;
+  max-width: 476px;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+section.world-class-talent .description h1,
+section.the-real-deal .description h1 {
+  color: rgba(231, 129, 107, 1);
+}
+
+section.about-us .description p {
+  width: 100%;
+}
+
+section.world-class-talent .description p,
+section.the-real-deal .description p {
+  color: rgba(51, 49, 54, 1);
+}
+
+section .three-circles {
+  position: absolute;
+  bottom: 0;
+  right: 197px;
+}
+
+footer {
+  margin: -72px;
+}

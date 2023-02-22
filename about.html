@@ -6,107 +6,21 @@
         <link rel="icon" type="image/png" sizes="32x32"
             href="./assets/favicon-32x32.png">
 
-        <title>Frontend Mentor | Designo Agency Website Challenge</title>
+        <title>Designo Agency Website Challenge</title>
 
         <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/index_media-queries.css">
         <link rel="stylesheet" href="./styles/contact.css">
         <link rel="stylesheet" href="./styles/web-design.css">
-        <link rel="stylesheet" href="./styles/media-queries.css">
+        <link rel="stylesheet" href="./styles/x-design_media-queries.css">
+        <link rel="stylesheet" href="./styles/about.css">
+        <link rel="stylesheet" href="./styles/about_media-queries.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
             href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
-
-        <style>
-            .rectangle {
-                top: 475px !important;
-            }
-
-            .about-us,
-            .world-class-talent,
-            .the-real-deal {
-                position: relative;
-                display: flex;
-                align-items: flex-end;
-                width: 77.22%;
-                border-radius: 15px;
-                overflow: hidden;
-            }
-
-            .world-class-talent,
-            .the-real-deal {
-                background-color: rgba(253, 243, 240, 1);
-                height: 640px;
-                margin-top: 160px;
-            }
-
-            .about-us {
-                background-color: rgba(231, 129, 107, 1);
-                height: 480px;
-                margin-top: 64px;
-            }
-            .about-us .description,
-            .world-class-talent .description,
-            .the-real-deal .description {
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-               
-            }
-
-            .about-us .description {
-                 top: 135px;
-                left: 95px;
-            }
-
-            .world-class-talent .description {
-                top: 154px; 
-                right: 96px;
-            }
-
-            .the-real-deal .description {
-                top: 154px;
-                left: 95px;
-            }
-
-            .world-class-talent .description,
-            .the-real-deal .description {
-                position: absolute;
-            }
-            
-            .about-us .description h1, 
-            .world-class-talent .description h1,
-            .the-real-deal .description h1 {
-                height: auto;
-            }
-
-            .world-class-talent .description h1,
-            .the-real-deal .description h1 {
-                color: rgba(231, 129, 107, 1);
-            }
-
-            .world-class-talent .description p,
-            .the-real-deal .description p {
-                color: rgba(51, 49, 54, 1);
-            }
-            
-            .world-class-talent .three-circles {
-                position: absolute;
-                bottom: 0;
-                right: 197px;
-            }
-            .the-real-deal .the-real-deal-image {
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
-
-            footer {
-                margin: -72px;
-            }
-        </style>
     </head>
     <body>
         <div class="rectangle"></div>
@@ -123,55 +37,64 @@
             </div>
         </header>
         <section class="about-us">
-            <img src="./assets/about/desktop/bg-pattern-hero-about-desktop.svg"
-                alt="An oval sticker" class="oval">
-            <img src="./assets/about/desktop/image-about-hero.jpg" alt="An
-                office photograph." class="office">
-            <div class="description">
-                <h1>About us</h1>
-                <p>Founded in 2010, we are a creative agency that produces
-                    lasting <br>
-                    results for our clients. We’ve partnered with many startups,
-                    <br>
-                    corporations, and nonprofits alike to craft designs that
-                    make real <br>
-                    impact. We’re always looking forward to creating brands,
-                    products, <br>
-                    and digital experiences that connect with our clients'
-                    audiences.</p>
+            <div class="description1">
+                <img
+                    src="./assets/about/desktop/bg-pattern-hero-about-desktop.svg"
+                    alt="An oval sticker" class="oval">
+                <div class="description">
+                    <h1>About us</h1>
+                    <p>Founded in 2010, we are a creative agency that produces
+                        lasting
+                        results for our clients. We’ve partnered with many
+                        startups,
+                        corporations, and nonprofits alike to craft designs that
+                        make real
+                        impact. We’re always looking forward to creating brands,
+                        products,
+                        and digital experiences that connect with our clients'
+                        audiences.</p>
+                </div>
+            </div>
+            <div class="image">
+                <img src="./assets/about/desktop/image-about-hero.jpg" alt="An
+                    office photograph." class="office">
             </div>
         </section>
         <section class="world-class-talent">
-            <img src="./assets/about/desktop/image-world-class-talent.jpg"
-                alt="A girl in the front of a wall."
-                class="world-class-talent-img">
-            <img src="./assets/shared/desktop/bg-pattern-three-circles.svg" alt="Three transparent ovals." class="three-circles">
-            <div class="description">
-                <h1>World-class talent</h1>
-                <p>We are a crew of strategists, problem-solvers, and
-                    technologists. <br>
-                    Every
-                    design is thoughtfully
-                    crafted from concept to launch,<br>
-                    ensuring success in its
-                    given market. We
-                    are
-                    constantly updating <br>
-                    our skills in a myriad of platforms. <br> <br>
+            <div class="image">
+                <img src="./assets/about/desktop/image-world-class-talent.jpg"
+                    alt="A girl in the front of a wall."
+                    class="world-class-talent-img">
+            </div>
+            <div class="description1">
+                <img src="./assets/shared/desktop/bg-pattern-three-circles.svg"
+                    alt="Three transparent ovals." class="three-circles">
+                <div class="description">
+                    <h1>World-class talent</h1>
+                    <p>We are a crew of strategists, problem-solvers, and
+                        technologists.
+                        Every
+                        design is thoughtfully
+                        crafted from concept to launch,
+                        ensuring success in its
+                        given market. We
+                        are
+                        constantly updating
+                        our skills in a myriad of platforms.
 
-                    Our team is multi-disciplinary and we are not merely
-                    interested in <br> form
-                    —
-                    content and meaning
-                    are just as important. We give great <br> importance to
-                    craftsmanship,
-                    service,
-                    and prompt delivery. <br>
-                    Clients have always been impressed with our high-quality
-                    <br>
-                    outcomes that
-                    encapsulates their
-                    brand’s story and mission.</p>
+                        Our team is multi-disciplinary and we are not merely
+                        interested in form
+                        —
+                        content and meaning
+                        are just as important. We give great importance to
+                        craftsmanship,
+                        service,
+                        and prompt delivery.
+                        Clients have always been impressed with our high-quality
+                        outcomes that
+                        encapsulates their
+                        brand’s story and mission.</p>
+                </div>
             </div>
         </section>
         <section class="features">
@@ -219,31 +142,39 @@
             </div>
         </section>
         <section class="the-real-deal">
-            <div class="description">
-                <h1>The real deal</h1>
-                <p>As strategic partners in our clients’ businesses, we are
-                    ready to <br> take
-                    on
-                    any challenge as our own.
-                    Solving real problems require <br> empathy and collaboration, and
-                    we strive
-                    to
-                    bring a fresh <br> perspective to every
-                    opportunity. We make design and <br> technology more accessible
-                    and give you
-                    tools to measure <br> success. <br> <br>
+            <div class="description1">
+                <div class="description">
+                    <h1>The real deal</h1>
+                    <p>As strategic partners in our clients’ businesses, we are
+                        ready to <br> take
+                        on
+                        any challenge as our own.
+                        Solving real problems require <br> empathy and
+                        collaboration, and
+                        we strive
+                        to
+                        bring a fresh <br> perspective to every
+                        opportunity. We make design and <br> technology more
+                        accessible
+                        and give you
+                        tools to measure <br> success. <br> <br>
 
-                    We are visual storytellers in appealing and captivating
-                    ways. By <br>
-                    combining
-                    business and marketing strategies,
-                    we inspire <br> audiences to take action and drive real results.</p>
+                        We are visual storytellers in appealing and captivating
+                        ways. By <br>
+                        combining
+                        business and marketing strategies,
+                        we inspire <br> audiences to take action and drive real
+                        results.</p>
+                </div>
+                <img src="./assets/shared/desktop/bg-pattern-two-circles.svg"
+                    alt="Three transparent ovals." class="three-circles">
             </div>
-            <img src="./assets/about/desktop/image-real-deal.jpg"
-                alt="Girl's hands holding a photograph."
-                class="the-real-deal-image">
-            <img src="./assets/shared/desktop/bg-pattern-two-circles.svg" alt="Three transparent ovals." class="three-circles">
-            
+            <div class="image">
+                <img src="./assets/about/desktop/image-real-deal.jpg"
+                    alt="Girl's hands holding a photograph."
+                    class="the-real-deal-image">
+            </div>
+
         </section>
         <section class="call-to-action">
             <div class="description">
@@ -260,9 +191,13 @@
         <footer>
             <div class="info">
                 <div class="header">
-                    <img
-                        src="./assets/shared/desktop/logo-light.png"
-                        alt="The light designo icon." class="designo">
+                    <div class="left-info">
+                        <a href="./index.html">
+                            <img
+                                src="./assets/shared/desktop/logo-light.png"
+                                alt="The light designo icon." class="designo">
+                        </a>
+                    </div>
                     <div class="right-info">
                         <a href="./about.html"><p>Our Company</p></a>
                         <a href="./locations.html"><p>Locations</p></a>

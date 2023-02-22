@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Jost, Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rectangle {
+  width: 1006px;
+  height: 594px;
+  position: absolute;
+  left: 0;
+  top: 281px !important;
+  border: none;
+  border-radius: 297px 297px 297px 0;
+  background-color: rgb(241, 243, 245);
+  z-index: -1;
+}
+
+section.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 77.22%;
+  height: 252px;
+  background-color: rgb(231, 129, 107);
+  border: none;
+  border-radius: 15px;
+  margin-top: 64px;
+  overflow: hidden;
+}
+
+section.title img {
+  position: absolute;
+  right: 0;
+  top: -144px;
+  z-index: -1;
+}
+
+section.title .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+section.title .description h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  line-height: 1.2;
+}
+
+section.title .description p {
+  font-size: 16px;
+  color: white;
+  line-height: 1.625;
+  text-align: center;
+  margin-top: 24px;
+}
+
+section.cards {
+  width: 77.22%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 30px;
+  row-gap: 32px;
+  margin-top: 160px;
+}
+
+section.cards .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: rgba(253, 243, 240, 1);
+  border-radius: 15px;
+  overflow: hidden;
+  height: auto
+}
+
+section.cards .card:hover {
+  background-color: rgba(231, 129, 107, 1);
+}
+
+section.cards .card:hover .description .text h2,
+section.cards .card:hover .description .text p {
+  color: white;
+}
+
+section.cards .card img {
+  position: relative;
+  width: 100%;
+}
+
+section.cards .card .description {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.cards .card .description .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.cards .card .description .text h2 {
+  color: rgba(231, 129, 107, 1);
+  font-size: 20px;
+  font-weight: 500;
+  margin: 32px 32px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.3;
+  letter-spacing: 5px;
+}
+
+section.cards .card .description .text p {
+  color: rgba(51, 49, 54, 1);
+  text-align: center;
+  line-height: 1.625;
+  margin-bottom: 64px;
+}
+
+section.design {
+  display: grid;
+  width: 77.22%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 308px;
+  row-gap: 0;
+  column-gap: 30px;
+  border: none;
+  margin-top: 160px;
+}

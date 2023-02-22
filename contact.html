@@ -6,12 +6,14 @@
         <link rel="icon" type="image/png" sizes="32x32"
             href="./assets/favicon-32x32.png">
 
-        <title>Frontend Mentor | Designo Agency Website Challenge</title>
+        <title>Designo Agency Website Challenge</title>
 
         <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/index_media-queries.css">
         <link rel="stylesheet" href="./styles/web-design.css">
         <link rel="stylesheet" href="./styles/contact.css">
-        <link rel="stylesheet" href="./styles/media-queries.css">
+        <link rel="stylesheet" href="./styles/contact_media-queries.css">
+
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,32 +21,7 @@
             href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
         <style>
-            .contact-us .form-button form p {
-                position: absolute;
-                right: 0;
-                top: 0;
-                display: none;
-                align-items: center;
-                font-size: 12px;
-                font-weight: 300;
-                font-style: italic;
-                color: white;
-            }
-
-            .contact-us .form-button form p:first-of-type{
-                top: 0;
-            }
-
-            .contact-us .form-button form p:nth-of-type(2) {
-                top: 60px;
-            }
-            
-            .contact-us .form-button form p:last-of-type {
-                top: 120px;
-            }
-            .contact-us .form-button form p img {
-                margin-left: 8px;
-            }
+           
         </style>
     </head>
     <body>
@@ -65,11 +42,11 @@
             <div class="description">
                 <h1 class="title">Contact us</h1>
                 <p>Ready to take it to the next level? Let’s talk about your
-                    project or <br>
+                    project or
                     idea and find out how we can help your business grow. If you
-                    are <br>
+                    are
                     looking for unique digital experiences that’s relatable to
-                    your <br>
+                    your
                     users, drop us a line.</p>
             </div>
             <div class="form-button">
@@ -142,9 +119,13 @@
         <footer>
             <div class="info">
                 <div class="header">
-                    <img
-                        src="./assets/shared/desktop/logo-light.png"
-                        alt="The light designo icon." class="designo">
+                    <div class="left-info">
+                        <a href="./index.html">
+                            <img
+                                src="./assets/shared/desktop/logo-light.png"
+                                alt="The light designo icon." class="designo">
+                        </a>
+                    </div>
                     <div class="right-info">
                         <a href="./about.html"><p>Our Company</p></a>
                         <a href="./locations.html"><p>Locations</p></a>
