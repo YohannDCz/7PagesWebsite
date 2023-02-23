@@ -126,15 +126,13 @@
     width: 83.19%;
   }
 
-  section.call-to-action .description a {
-    margin-top: 32px;
+  section.call-to-action a {
+    margin: 0;
+    margin-bottom: 40px;
   }
 
   section.call-to-action button {
     align-items: normal;
-    top: unset;
-    bottom: unset;
-    left: unset;
   }
 
   section.call-to-action .sticker {

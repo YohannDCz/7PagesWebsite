@@ -1,6 +1,7 @@
 const empty1 = document.querySelector(".empty1");
 const empty2 = document.querySelector(".empty2");
 const empty3 = document.querySelector(".empty3");
+const empty4 = document.querySelector(".empty4");
 
 const input1 = document.querySelector(".input1");
 const input2 = document.querySelector(".input2");
@@ -40,9 +41,18 @@ input1.oninput = function () {
 
 input2.oninput = function () {
   if (input2.value.length > 0) {
-    empty2.style.display = "none";
+    const enteredEmail = input2.value;
+    const isValidEmail = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-]+)(\.[a-zA-Z]{2,5}){1,2}$/.test(enteredEmail);
+    if (isValidEmail) {
+      empty4.style.display = "none";
+    } else {
+      empty4.style.display = "flex";
+      empty2.style.display = "none";
+
+    }
   } else {
     empty2.style.display = "flex";
+    empty4.style.display = "none";
   }
 }
 

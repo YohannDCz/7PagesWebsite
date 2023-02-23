@@ -32,6 +32,7 @@ section.contact-us .ovals {
   transform: rotate(-90deg);
   width: 480px;
 }
+
 section.contact-us .description {
   position: relative;
   top: 135px;
@@ -48,7 +49,7 @@ section.contact-us .description .title {
   color: white;
   line-height: 1;
   width: 100%;
-  border:none;
+  border: none;
 }
 
 section .description p {
@@ -160,27 +161,36 @@ footer {
   margin-top: 160px;
 }
 
-section.contact-us .form-button form p {
+section.contact-us .form-button form div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   position: absolute;
   right: 0;
   top: 0;
   display: none;
   align-items: center;
+
+}
+
+section.contact-us .form-button form > div > p {
   font-size: 12px;
   font-weight: 300;
   font-style: italic;
   color: white;
+  margin-right: 8px;
 }
 
-section.contact-us .form-button form p:first-of-type {
+section.contact-us .form-button form .empty1 {
   top: 0;
 }
 
-section.contact-us .form-button form p:nth-of-type(2) {
+section.contact-us .form-button form .empty2,
+section.contact-us .form-button form .empty4 {
   top: 60px;
 }
 
-section.contact-us .form-button form p:last-of-type {
+section.contact-us .form-button form .empty3 {
   top: 120px;
 }
 
