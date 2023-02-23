@@ -6,8 +6,7 @@ This is a solution to the [Designo agency website challenge on Frontend Mentor](
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+  - [Solution](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -26,11 +25,7 @@ Users should be able to:
   - The `Name`, `Email Address` or `Your Message` fields are empty should show "Can't be empty"
   - The `Email Address` is not formatted correctly should show "Please use a valid email address"
 
-### Screenshot
-
-![](./screenshots/Screenshot 2023-02-23 at 11.46.27.png)
-![](./screenshots/Screenshot 2023-02-23 at 11.46.40.png)
-![](./screenshots/Screenshot 2023-02-23 at 11.47.15.png)
+### Solution
 
 - Solution URL: [Add solution URL here](https://github.com/YohannDCz/7PagesWebsite)
 - Live Site URL: [Add live site URL here](https://yohanndcz.github.io/7PagesWebsite/)
