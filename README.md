@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Solution
 
-- Solution URL: [Add solution URL here](https://github.com/YohannDCz/7PagesWebsite)
-- Live Site URL: [Add live site URL here](https://yohanndcz.github.io/7PagesWebsite/)
+- [Solution URL](https://github.com/YohannDCz/7PagesWebsite)
+- [Live Site URL](https://yohanndcz.github.io/7PagesWebsite/)
 
 ## My process
 
