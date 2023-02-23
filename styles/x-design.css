@@ -46,7 +46,6 @@ section.title img {
   position: absolute;
   right: 0;
   top: -144px;
-  z-index: -1;
 }
 
 section.title .description {

@@ -1,5 +1,11 @@
 @media only screen and (max-width: 850px) {
 
+  header {
+    width: 90%;
+    max-width: 690px;
+    margin: 64px 40px 0;
+  }
+
   section.award,
   section.call-to-action {
     display: flex;
@@ -13,8 +19,7 @@
   section.call-to-action .description {
     align-items: center;
     left: unset;
-    width: 100%;
-    max-width: 573px;
+    width: 90%;
     padding: 0 58px;
   }
 
@@ -31,6 +36,11 @@
     min-height: 843px;
   }
 
+  section.award .description {
+    top: 60px;
+    z-index: 1;
+  }
+
   section.award .description h1 {
     height: 100%;
     min-height: 165px;
@@ -44,15 +54,15 @@
     margin-top: 8px;
   }
 
-  section.award .description button,
-  section.call-to-action .description button {
+  section.award .description button {
     margin-top: 19px;
   }
 
   section.award .phone {
     left: unset;
     justify-self: center;
-    top: 46.68%;
+    top: 300px;
+    z-index: 0;
   }
 
   section.design {
@@ -99,32 +109,169 @@
     width: 65.67%;
   }
 
-
-
   section.features .container .description p {
     margin-top: 16px;
     text-align: left;
   }
 
   section.call-to-action {
+    align-items: center;
     margin-top: 68px;
     min-height: 350px;
   }
 
   section.call-to-action .description {
+    padding: 0;
     top: 58px;
-  } 
+    width: 83.19%;
+  }
+
+  section.call-to-action .description a {
+    margin-top: 32px;
+  }
 
   section.call-to-action button {
+    align-items: normal;
     top: unset;
-    bottom: 57px;
-    right: unset;
+    bottom: unset;
     left: unset;
+  }
+
+  section.call-to-action .sticker {
+    top: -115px;
+    right: -175px;
+  }
+
+  footer .info {
+    width: 90%;
+    max-width: 690px;
+    margin: 166px 40px 0;
+  }
+
+  footer .info .header .right-info a:first-child p {
+    margin-left: 0;
   }
 
   .rectangle,
   .rectangle2 {
     display: none;
   }
+}
 
+@media only screen and (max-width: 680px) {
+  header {
+    width: 87.70%;
+    margin: 34px 24px 0;
+  }
+
+  header .right-info {
+    display: none;
+  }
+
+  header .hamburger {
+    display: block;
+  }
+
+  section.award {
+    width: 100%;
+    border-radius: 0;
+    margin-top: 16px;
+  }
+
+  section.features .container .description {
+    display: flex;
+    justify-content: center;
+  }
+
+  section.award .description {
+    width: 87.23%;
+    padding: 0;
+    top: 80px;
+  }
+
+  section.award .description h1 {
+    font-size: 32px;
+    line-height: 1.125;
+    min-height: 118px;
+  }
+
+  section .description p {
+    font-size: 15px;
+  }
+
+  section.features .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.features .container:nth-child(2),
+  section.features .container:nth-child(3) {
+    margin-top: 80px;
+  }
+
+  section.features .container .description {
+    margin: 48px 0 0;
+  }
+
+  section.features .container .description h2,
+  section.features .container .description p {
+    text-align: center;
+    align-self: center;
+  }
+
+  section.features .container .description p {
+    margin-top: 32px;
+  }
+
+  section.call-to-action {
+    height: 380px;
+    margin-top: 120px;
+  }
+
+  footer {
+    height: 815px;
+    margin-top: -138px;
+  }
+
+  footer .info {
+    margin-top: 200px;
+  }
+
+  footer .info .header {
+    flex-direction: column;
+  }
+
+  footer .info .header .right-info {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+  }
+
+  footer .info .header .right-info a:nth-child(2) p,
+  footer .info .header .right-info a:nth-child(3) p {
+    margin-top: 32px;
+  }
+
+  footer .info .header .right-info p {
+    margin: 0;
+  }
+
+  footer .info hr {
+    display: none;
+  }
+
+  footer .info .bottom-info {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  footer .info .bottom-info>div {
+    margin: 40px 0 0 !important;
+  }
+
+  footer .info .bottom-info .central-office p,
+  footer .info .bottom-info .contact p {
+    text-align: center;
+  }
 }

@@ -37,6 +37,13 @@
                 <a href="./locations.html"><p>Locations</p></a>
                 <a href="./contact.html"><p>Contact</p></a>
             </div>
+            <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" class="hamburger">
+            <img src="./assets/shared/mobile/icon-close.svg" alt="" class="close" style="display: none;">
+            <div class="menu">
+                <a href="./about.html"><p>OUR COMPANY</p></a>
+                <a href="./locations.html"><p>LOCATION</p></a>
+                <a href="./contact.html"><p>CONTACT</p></a>
+            </div>
         </header>
         <section class="contact-us">
             <div class="description">
@@ -49,6 +56,7 @@
                     your
                     users, drop us a line.</p>
             </div>
+            <img src="./assets/shared/desktop/bg-pattern-small-circle.svg" alt="" class="ovals">
             <div class="form-button">
                 <form>
                     <input class="input1" type="text" name="box"
@@ -164,63 +172,8 @@
                 </div>
             </div>
         </footer>
-        <script>
-
-            const empty1 = document.querySelector(".empty1");
-            const empty2 = document.querySelector(".empty2");
-            const empty3 = document.querySelector(".empty3");
-
-            const input1 = document.querySelector(".input1");
-            const input2 = document.querySelector(".input2");
-            const input3 = document.querySelector(".input3");
-
-            const submit = document.querySelector('.submit')
-
-            submit.addEventListener('click', function () {
-                const form = document.forms[0];
-                const required = form.querySelectorAll('[required]');
-                const invalids = Array.from(required).filter(node => {
-                return !node.checkValidity();
-                })
-                
-                console.log(typeof invalids)
-                invalids.forEach(invalid => {
-                    if (invalid == input1) {
-                        empty1.style.display = "flex";
-
-                    }
-                    if (invalid == input2) {
-                        empty2.style.display = "flex";
-                    }
-                    if (invalid == input3) {
-                        empty3.style.display = "flex";
-                    } 
-                })
-            })
-
-            input1.oninput = function () {
-                if (input1.value.length > 0) {
-                    empty1.style.display = "none";
-                } else {
-                    empty1.style.display = "flex";
-                }
-            }
-
-            input2.oninput = function () {
-                if (input2.value.length > 0) {
-                    empty2.style.display = "none";
-                } else {
-                    empty2.style.display = "flex";
-                }
-            }
-
-            input3.oninput = function () {
-                if (input3.value.length > 0) {
-                    empty3.style.display = "none";
-                } else {
-                    empty3.style.display = "flex";
-                }
-            }
-        </script>
+        <script></script>
+        <script src="./scripts/script.js"></script>
+        <script src="./scripts/form.js"></script>
     </body>
 </html>

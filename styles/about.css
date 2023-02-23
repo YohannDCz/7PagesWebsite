@@ -29,9 +29,9 @@ section .description1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex: 1; */
+  flex: 1;
   width: 100%;
-  max-width: 635px;
+  /* max-width: 635px; */
   height: 100%;
   z-index: 0;
 }

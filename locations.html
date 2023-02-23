@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="./styles/x-design.css">
         <link rel="stylesheet" href="./styles/x-design_media-queries.css">
         <link rel="stylesheet" href="./styles/location.css">
+        <link rel="stylesheet" href="./styles/location_media-queries.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +34,15 @@
                 <a href="./locations.html"><p>Locations</p></a>
                 <a href="./contact.html"><p>Contact</p></a>
             </div>
-        </header>
+            <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" class="hamburger">
+            <img src="./assets/shared/mobile/icon-close.svg" alt="" class="close" style="display: none;">
+            <div class="menu">
+                <a href="./about.html"><p>OUR COMPANY</p></a>
+                <a href="./locations.html"><p>LOCATION</p></a>
+                <a href="./contact.html"><p>CONTACT</p></a>
+            </div>
+            <div class="filter"></div>
+            </header>
         <section class="canada">
             <div class="container">
                 <img src="./assets/shared/desktop/bg-pattern-two-circles.svg"
@@ -54,15 +63,11 @@
                     </div>
                 </div>
             </div>
-            <div class="map">
-                <img src="./assets/locations/desktop/image-map-canada.png"
-                    alt="" class="image-map">
+            <div class="map map1">
             </div>
         </section>
         <section class="australia">
-            <div class="map">
-                <img src="./assets/locations/desktop/image-map-australia.png"
-                    alt="" class="image-map">
+            <div class="map map2">
             </div>
             <div class="container">
                 <img src="./assets/shared/desktop/bg-pattern-two-circles.svg"
@@ -107,10 +112,7 @@
                     </div>
                 </div>
             </div>
-            <div class="map">
-                <img
-                    src="./assets/locations/desktop/image-map-united-kingdom.png"
-                    alt="" class="image-map">
+            <div class="map map3">
             </div>
         </section>
         <section class="call-to-action">
@@ -120,10 +122,10 @@
                     out how
                     our expertise can help your business grow.</p>
             </div>
-            <button>Get in touch</button>
             <img
-                src="./assets/shared/desktop/bg-pattern-call-to-action.svg"
-                alt="A round sticker." class="sticker">
+            src="./assets/shared/desktop/bg-pattern-call-to-action.svg"
+            alt="A round sticker." class="sticker">
+            <a href="./contact.html"><button>Get in touch</button></a>
         </section>
         <footer>
             <div class="info">
@@ -173,5 +175,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./scripts/script.js"></script>
     </body>
 </html>

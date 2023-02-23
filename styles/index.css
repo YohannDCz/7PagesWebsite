@@ -16,25 +16,6 @@ body {
   align-items: center;
 }
 
-.rectangle,
-.rectangle2 {
-  width: 1006px;
-  height: 594px;
-  position: absolute;
-  left: 0;
-  top: 475px;
-  border: none;
-  border-radius: 297px 297px 297px 0;
-  background-color: rgb(241, 243, 245);
-  z-index: -1;
-}
-
-.rectangle2 {
-  left: unset;
-  right: 0;
-  top: 1879px;
-  border-radius: 297px 0 297px 297px;
-}
 
 header {
   width: 77.22%;
@@ -55,6 +36,13 @@ header .right-info {
   align-items: center;
 }
 
+header .hamburger,
+header .close {
+  display: none;
+  width: 24px;
+  height: 20px;
+}
+
 header .right-info a {
   text-decoration: none;
   color: black;
@@ -63,15 +51,65 @@ header .right-info a {
 header .right-info a p {
   font-size: 14px;
   text-transform: uppercase;
-  margin-left: 42px;
   letter-spacing: 2px;
   text-align: center;
   white-space: nowrap;
 }
 
+header .right-info a:nth-child(2) p,
+header .right-info a:nth-child(3) p {
+  margin-left: 42px;
+}
+
 header .right-info a p:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+header .menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 235px;
+  background-color: black;
+  z-index: 999;
+}
+
+header .menu a {
+  color: white;
+  text-decoration: none;
+}
+
+header.menu a:hover {
+  text-decoration: underline;
+}
+
+header .menu a p {
+  font-size: 24px;
+  font-family: Jost, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 24px;
+}
+
+header .menu a:nth-child(2) p,
+header .menu a:nth-child(3) p {
+  margin-top: 32px;
+}
+
+header .filter {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
 }
 
 section.award {
@@ -80,7 +118,7 @@ section.award {
   width: 77.22%;
   min-height: 640px;
   background-color: rgb(231, 129, 107);
-  margin-top: 68px;
+  margin-top: 67px;
   border: none;
   border-radius: 15px;
   overflow: hidden;
@@ -167,6 +205,11 @@ section.design a div {
   border: none;
   border-radius: 12px;
   overflow: hidden;
+  transition: 0.5s;
+}
+
+section.design a div:hover {
+  filter: brightness(50%);
 }
 
 section.design a div>img {
@@ -224,7 +267,8 @@ section.design a:nth-child(1) {
 }
 
 section.features {
-  display: flex;;
+  display: flex;
+  ;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -301,6 +345,9 @@ section.features .container .description {
 }
 
 section.call-to-action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   position: relative;
   width: 100%;
   max-width: 1112px;
@@ -312,10 +359,18 @@ section.call-to-action {
 }
 
 section.call-to-action .description {
+  display: ;
   max-width: 459px;
   height: auto;
-  position: absolute;
-  top: 72px;
+  position: relative;
+  top: unset;
+  margin: 0;
+  left: 95px;
+}
+
+section.call-to-action .description1 {
+  display: flex;
+  flex-direction: column;
 }
 
 section.call-to-action .description h1 {
@@ -336,18 +391,21 @@ section.call-to-action .sticker {
   z-index: 0;
 }
 
-section.call-to-action button {
-  position: absolute;
-  top: 118px;
-  right: 96px;
+section.call-to-action a {
+  position: relative;
   width: 152px;
   height: 56px;
-  margin: 0;
+  margin: 48px;
   z-index: 1;
   padding: 0;
 }
 
-section.call-to-action button:hover {
+section.call-to-action a button {
+  white-space: nowrap;
+}
+
+section.award .description a button:hover,
+section.call-to-action a button:hover {
   background-color: rgba(255, 173, 155, 1);
   color: white;
 }
@@ -449,4 +507,24 @@ footer .info .bottom-info .social img {
 
 footer .info .bottom-info .social img:hover {
   filter: brightness(130%);
+}
+
+.rectangle,
+.rectangle2 {
+  width: 1006px;
+  height: 594px;
+  position: absolute;
+  left: 0;
+  top: 475px;
+  border: none;
+  border-radius: 297px 297px 297px 0;
+  background-color: rgb(241, 243, 245);
+  z-index: -1;
+}
+
+.rectangle2 {
+  left: unset;
+  right: 0;
+  top: 1879px;
+  border-radius: 297px 0 297px 297px;
 }
